@@ -1,7 +1,3 @@
-# print user full name
-# add surname
-
-firstname = input("what is ur firstname:\n") #firstname
-surname=input("what is ur surname:\n") #surname
-
-print("The user name is",firstname,surname , "\nHello",firstname,surname)
+# gove me the python version which i am use it.
+import sys
+print(f"python version:\n{sys.version}")

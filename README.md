@@ -1,2 +1,2 @@
 # python_challenges
-give the user python version.
+give the user current date and time.

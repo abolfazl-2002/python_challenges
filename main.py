@@ -1,6 +1,8 @@
-# calculate the area of circle.
+# give the seq datas and this app convert to list or tuple
 
-r = float(input("Enter the radius of circle:\n")) # radius
-area = (r**2)*3.1415 # area
+seq = input("enter ur seq numbers and seperated whit comma:\n") # numbers
 
-print("Area of circle is {}".format(round(area,2)))
+my_list = seq.split(',') # convert to the list
+my_tuple = tuple(my_list) # convert to tuple
+
+print("\nList: {0} \ntuple : {1}".format(my_list,my_tuple))

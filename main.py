@@ -1,6 +1,6 @@
-# give the user current date and time.
+# calculate the area of circle.
 
-from datetime import *
+r = float(input("Enter the radius of circle:\n")) # radius
+area = (r**2)*3.1415 # area
 
-current_time=datetime.now()
-print(f"time : {current_time}")
+print("Area of circle is {}".format(round(area,2)))

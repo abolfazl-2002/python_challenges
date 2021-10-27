@@ -1,2 +1,2 @@
 # python_challenges
-give the user current date and time.
+this app get the radius of circle and show the area.

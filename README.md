@@ -1,2 +1,2 @@
 # python_challenges
-A program which accepts the user's first and last name and print them in reverse order with a space between them.
+A Python program to accept a filename from the user and print the extension of that.

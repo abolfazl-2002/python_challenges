@@ -1,12 +1,32 @@
-# get the user's first and last name and give them in reverse order
+# get a filename and give the extension of that
 
-firstName=input("enter first name:\n") # first name
-lastName=input("enter last name:\n") # last name
+fileFullName = input("filename:\n") # file name whit extention
 
-# reverse func
-def reverse(firstname,lastname):
-    fullName = lastname+ " " + firstname
+# solution 1 
+import os
+def showExtention_1(filename):
+    fileNameList= os.path.splitext(filename) # convert file name to list
 
-    return fullName
+    fileName = fileNameList[0] # file base name
+    fileExtention = fileNameList[1] # file extention
 
-print(reverse(firstName,lastName))
+    return """
+    filename : {}
+    fileextention : {}
+    """.format(fileName,fileExtention)
+
+
+# solution 2
+def showExtention_2(filename):
+    fileNameList = filename.rsplit(".",1) # convert file name to list
+
+    fileName = fileNameList[0] # file base name
+    fileExtention = fileNameList[1] # file extention
+
+    return """
+    filename : {}
+    fileextention : .{}
+    """.format(fileName,fileExtention)
+
+# print(showExtention_1(fileFullName))
+print(showExtention_2(fileFullName))

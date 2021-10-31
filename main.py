@@ -1,8 +1,12 @@
-# give the seq datas and this app convert to list or tuple
+# get the user's first and last name and give them in reverse order
 
-seq = input("enter ur seq numbers and seperated whit comma:\n") # numbers
+firstName=input("enter first name:\n") # first name
+lastName=input("enter last name:\n") # last name
 
-my_list = seq.split(',') # convert to the list
-my_tuple = tuple(my_list) # convert to tuple
+# reverse func
+def reverse(firstname,lastname):
+    fullName = lastname+ " " + firstname
 
-print("\nList: {0} \ntuple : {1}".format(my_list,my_tuple))
+    return fullName
+
+print(reverse(firstName,lastName))

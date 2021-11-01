@@ -1,2 +1,2 @@
 # python_challenges
-A Python program to accept a number like n and calculate n+nn+nnn.
+A Python program to print the documents (syntax, description etc.) of Python built-in function.

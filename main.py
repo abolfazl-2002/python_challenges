@@ -1,4 +1,11 @@
-# get the functiom and  print the documents of Python that built-in function
+# print the calendar of a given month and year
 
-#print(abs.__doc__) # solution 1
-print(help(abs)) # solution 2
+import calendar
+from datetime import datetime
+
+y = datetime.now().year # get current year
+m = datetime.now().month # get current month
+
+c = calendar.month(y,m) # get current month calander
+
+print(c)

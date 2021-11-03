@@ -1,2 +1,2 @@
 # python_challenges
-A Python program to print the calendar of a given month and year.
+A Python program to calculate number of days between two dates.

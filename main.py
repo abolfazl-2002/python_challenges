@@ -1,11 +1,10 @@
-# print the calendar of a given month and year
+# calculate number of days between two dates
 
-import calendar
-from datetime import datetime
+date_1 = [int(date) for date in input("date 1: (2014.6.30)\n").split(".")] # date 1
+date_2 = [int(date) for date in input("date 2: (2014.6.30)\n").split(".")] # date 2
 
-y = datetime.now().year # get current year
-m = datetime.now().month # get current month
+days_1 = date_1[0]*365 + date_1[1]*30 + date_1[2] # days in date 1
+days_2 = date_2[0]*365 + date_2[1]*30 + date_2[2] # days in date 2
 
-c = calendar.month(y,m) # get current month calander
-
-print(c)
+result = abs(days_2-days_1)
+print("diffrence of this two date is " , result)
